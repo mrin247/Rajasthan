@@ -176,6 +176,10 @@ section {
   color: var(--white);
 }
 
+.fullwidth-cook {
+  width: 80%;
+}
+
 .fullwidth {
   width: 100%;
 }
@@ -703,7 +707,11 @@ section {
     width: 100%;
   }
 
-  .h-xs {
+   .h-xs-about {
     display: none;
+  }
+
+  .h-xs{
+    width: 100%;
   }
 }
