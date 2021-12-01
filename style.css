@@ -138,8 +138,23 @@ section {
 }
 
 .slogan h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  text-align: center; 
   color: var(--primary-color);
+}
+
+#about-slogan-span{
+  font-size: 20px;
+  margin: 5px;
+  display: block;
+  margin-top: 10px;
+  color: orange;
+  font-weight: 600;
+}
+
+#intro{
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .slogan button {
@@ -561,6 +576,9 @@ section {
 
   .about-slogan.start {
     transform: translateX(0) !important;
+  }
+  .about-slogan {
+    padding: 1rem;
   }
 
   .food-menu {
