@@ -157,6 +157,10 @@ section {
   text-align: center;
 }
 
+#call-us{
+  font-size: 20px;
+}
+
 .slogan button {
   padding: 1rem 5rem;
   outline: none;
@@ -203,8 +207,13 @@ section {
 
 .about-slogan h3 {
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: var(--grey);
+}
+
+#slogan-para{
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .primary-color {
