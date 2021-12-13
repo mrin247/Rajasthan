@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #0f9d58;
+  --primary-color: #E56A23;
   --background-color: #f0f3f7;
   --secon-color: #9da2ad;
   --grey: #7a7a7b;
@@ -24,6 +24,7 @@ html {
   scroll-behavior: smooth;
   position: relative;
   overflow-x: hidden;
+ 
 }
 
 .nav {
@@ -44,6 +45,7 @@ html {
   justify-content: space-between;
   padding: 1rem;
 }
+
 
 .logo {
   font-size: 2rem;
@@ -161,6 +163,12 @@ section {
   font-size: 20px;
 }
 
+.bx-phone,
+.bxl-chrome,
+.bx-mail-send{
+  font-size: 16px;
+}
+
 .slogan button {
   padding: 1rem 5rem;
   outline: none;
@@ -237,6 +245,9 @@ section {
 
 .food-category {
   display: flex;
+}
+.food-category::-webkit-scrollbar {
+  display: none;
 }
 
 .food-category button {
@@ -365,6 +376,7 @@ section {
 
 .footer {
   color: var(--white);
+  padding: 4rem;
 }
 
 .footer h1 {
@@ -423,19 +435,23 @@ section {
   display: block;
 }
 
-.food-item-wrap.salad > div.salad-type {
+.food-item-wrap.sweet > div.sweet-type {
   display: block;
 }
 
-.food-item-wrap.lorem > div.lorem-type {
+.food-item-wrap.special > div.special-type {
   display: block;
 }
 
-.food-item-wrap.ipsum > div.ipsum-type {
+.food-item-wrap.veg > div.veg-type {
   display: block;
 }
 
-.food-item-wrap.dolor > div.dolor-type {
+.food-item-wrap.breakfast > div.breakfast-type {
+  display: block;
+}
+
+.food-item-wrap.chat > div.chat-type {
   display: block;
 }
 
