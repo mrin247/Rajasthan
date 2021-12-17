@@ -18,7 +18,12 @@ a {
   text-decoration: none;
 }
 
-body,
+body {
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+}
 html {
   background-color: var(--background-color);
   scroll-behavior: smooth;
@@ -320,6 +325,45 @@ section {
   text-align: left;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  border-radius: 35px;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .review-wrap {
   width: 100%;
   padding: 1rem;
@@ -565,7 +609,7 @@ section {
 }
 
 :root {
-  --primary-color: #E56A23;
+  --primary-color: #e56a23;
   --background-color: #f0f3f7;
   --secon-color: #9da2ad;
   --grey: #7a7a7b;
@@ -590,7 +634,6 @@ html {
   scroll-behavior: smooth;
   position: relative;
   overflow-x: hidden;
- 
 }
 
 .nav {
@@ -611,7 +654,6 @@ html {
   justify-content: space-between;
   padding: 1rem;
 }
-
 
 .logo {
   font-size: 2rem;
@@ -652,7 +694,7 @@ html {
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-.cart-tel{
+.cart-tel {
   width: 3rem;
   height: 3rem;
   display: flex;
@@ -707,11 +749,11 @@ section {
 
 .slogan h1 {
   font-size: 4rem;
-  text-align: center; 
+  text-align: center;
   color: var(--primary-color);
 }
 
-#about-slogan-span{
+#about-slogan-span {
   font-size: 20px;
   margin: 5px;
   display: block;
@@ -720,18 +762,18 @@ section {
   font-weight: 600;
 }
 
-#intro{
+#intro {
   font-size: 1.4rem;
   text-align: center;
 }
 
-#call-us{
+#call-us {
   font-size: 20px;
 }
 
 .bx-phone,
 .bxl-chrome,
-.bx-mail-send{
+.bx-mail-send {
   font-size: 16px;
 }
 
@@ -785,7 +827,7 @@ section {
   color: var(--grey);
 }
 
-#slogan-para{
+#slogan-para {
   font-size: 20px;
   font-weight: 500;
 }
@@ -1148,8 +1190,8 @@ section {
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-height: 680px){
-  .slogan h1{
+@media only screen and (max-height: 680px) {
+  .slogan h1 {
     display: none;
   }
 }
@@ -1158,7 +1200,7 @@ section {
     font-size: 13px;
   }
 
-  section{
+  section {
     padding: 2rem 0;
   }
 
@@ -1166,11 +1208,11 @@ section {
     font-size: 3rem !important;
   }
 
-  .margin-contact{
+  .margin-contact {
     margin: 12px;
   }
 
-  .bxs-phone-call{
+  .bxs-phone-call {
     font-size: 30px;
   }
 
@@ -1316,15 +1358,14 @@ section {
     width: 100%;
   }
 
-   .h-xs-about {
+  .h-xs-about {
     display: none;
   }
 
-  .h-xs{
+  .h-xs {
     width: 100%;
   }
 }
-
 
 @media only screen and (max-width: 600px) {
   * {
