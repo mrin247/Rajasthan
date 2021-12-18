@@ -82,6 +82,71 @@ loop = () => {
 
 loop();
 
+// All Sweet Modal
+var body = document.body;
+
+var sweetModal = document.getElementById("my-sweet-Modal");
+var allSweet = document.getElementById("all-sweet");
+var closesweet = document.getElementById("close-sweet");
+allSweet.addEventListener("click", function () {
+  sweetModal.style.display = "block";
+});
+
+closesweet.onclick = function () {
+  sweetModal.style.display = "none";
+};
+
+// All veg Modal
+var vegModal = document.getElementById("my-veg-Modal");
+var allveg = document.getElementById("all-veg");
+var closeveg = document.getElementById("close-veg");
+allveg.addEventListener("click", function () {
+  vegModal.style.display = "block";
+});
+closeveg.onclick = function () {
+  vegModal.style.display = "none";
+};
+
+// All breakfast Modal
+//var body= document.getElementById("body");
+var breakfastModal = document.getElementById("my-breakfast-Modal");
+var allbreakfast = document.getElementById("all-breakfast");
+var closebreakfast = document.getElementById("close-breakfast");
+allbreakfast.addEventListener("click", function () {
+  breakfastModal.style.display = "block";
+});
+closebreakfast.onclick = function () {
+  breakfastModal.style.display = "none";
+};
+
+// All chat Modal
+//var body= document.getElementById("body");
+var chatModal = document.getElementById("my-chat-Modal");
+var allchat = document.getElementById("all-chat");
+var closeChat = document.getElementById("close-chat");
+allchat.addEventListener("click", function () {
+  chatModal.style.display = "block";
+});
+closeChat.onclick = function () {
+  chatModal.style.display = "none";
+};
+
+// Window close
+window.onclick = function (event) {
+  if (event.target == sweetModal) {
+    sweetModal.style.display = "none";
+  }
+  if (event.target == vegModal) {
+    vegModal.style.display = "none";
+  }
+  if (event.target == breakfastModal) {
+    breakfastModal.style.display = "none";
+  }
+  if (event.target == chatModal) {
+    chatModal.style.display = "none";
+  }
+};
+
 // mobile nav
 
 let bottomNavItems = document.querySelectorAll(".mb-nav-item");
