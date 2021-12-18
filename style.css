@@ -349,6 +349,21 @@ section {
   width: 80%;
 }
 
+.grid-box{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+.grid-box p{
+  margin: 2px;
+}
+
+.modal-h2{
+  color: var(--primary-color);
+  width: 25vh;
+  align-items: center;
+  margin: 2rem auto;
+}
+
 /* The Close Button */
 .close {
   color: #aaa;
@@ -1198,6 +1213,15 @@ section {
 @media only screen and (max-width: 600px) {
   * {
     font-size: 13px;
+  }
+
+  .grid-box{
+    grid-template-columns: repeat(2,auto);
+  }
+
+  .modal-h2{
+    color: var(--primary-color);
+    margin: 2rem 2rem;
   }
 
   section {
