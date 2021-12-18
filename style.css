@@ -337,6 +337,7 @@ section {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
+  margin: 2rem 0;
 }
 
 /* Modal Content/Box */
@@ -1216,7 +1217,7 @@ section {
   }
 
   .grid-box{
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(1,auto);
   }
 
   .modal-h2{
