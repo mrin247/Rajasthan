@@ -337,6 +337,7 @@ section {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
+  margin: 2rem 0;
 }
 
 /* Modal Content/Box */
@@ -347,6 +348,21 @@ section {
   border: 1px solid #888;
   border-radius: 35px;
   width: 80%;
+}
+
+.grid-box{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+.grid-box p{
+  margin: 2px;
+}
+
+.modal-h2{
+  color: var(--primary-color);
+  width: 25vh;
+  align-items: center;
+  margin: 2rem auto;
 }
 
 /* The Close Button */
@@ -1198,6 +1214,15 @@ section {
 @media only screen and (max-width: 600px) {
   * {
     font-size: 13px;
+  }
+
+  .grid-box{
+    grid-template-columns: repeat(1,auto);
+  }
+
+  .modal-h2{
+    color: var(--primary-color);
+    margin: 2rem 2rem;
   }
 
   section {
