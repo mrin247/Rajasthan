@@ -350,15 +350,15 @@ section {
   width: 80%;
 }
 
-.grid-box{
+.grid-box {
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
 }
-.grid-box p{
+.grid-box p {
   margin: 2px;
 }
 
-.modal-h2{
+.modal-h2 {
   color: var(--primary-color);
   width: 25vh;
   align-items: center;
@@ -1216,11 +1216,11 @@ section {
     font-size: 13px;
   }
 
-  .grid-box{
-    grid-template-columns: repeat(1,auto);
+  .grid-box {
+    grid-template-columns: repeat(1, auto);
   }
 
-  .modal-h2{
+  .modal-h2 {
     color: var(--primary-color);
     margin: 2rem 2rem;
   }
@@ -1410,7 +1410,7 @@ section {
   }
 
   .about {
-    background-image: url(assets/dan-gold-4_jhDO54BYg-unsplash.jpg);
+    background-image: url(assets/all-back.jpg);
     background-attachment: fixed;
   }
 
